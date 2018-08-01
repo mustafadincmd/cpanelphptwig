@@ -28,6 +28,6 @@ if (isset($_SESSION['success_message'])) {
     $twig->addGlobal('success_message', $_SESSION['success_message']);
 }
 */
-$cPanel = new cPanel("must5624","d84fd64407T","94.199.200.84");
+$cPanel = new cPanel("","","");
 
 //must5624
