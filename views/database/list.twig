@@ -1,0 +1,11 @@
+{% extends 'template/default.twig' %}
+{% block title %}MD{% endblock %}
+{% block desc %}Veritabanı Listele {% endblock %}
+{% block content %}
+    <label for=""><strong>Veritabanları</strong></label>
+    <ol>
+        {% for data in result %}
+            <li>{{ data.db}} ({{ data.sizemeg}} MB) - {{data.usercount}} users</li>
+        {% endfor %}
+    </ol>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'template/default.twig' %}
+{% block title %}Mustafa Dinç cPanel Geliştirme{% endblock %}
+{% block desc %}Database oluşturma{% endblock %}
+{% block content %}
+    <form action="/cpanelornek/database/add.php" method="post">
+        <label for="">Database Name (with Prefix)</label>
+        <input type="text" class="form-control" name="database_name" placeholder="prefix_database" style="border-radius: 0px;"><br>
+        <button type="submit" class="btn btn-primary btn-block btn-md" style="border-radius: 0px;">Database Ekle</button>
+    </form>
+{% endblock %}

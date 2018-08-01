@@ -1,0 +1,18 @@
+{% extends 'template/default.twig' %}
+{% block title %}Mustafa Dinç cPanel Geliştirme{% endblock %}
+{% block content %}
+    <label for="">Domainler</label>
+    <a href="/cpanelornek/domain/list.php" class="btn btn-block btn-secondary btn-md">Domainleri Listele </a>
+    <a href="/cpanelornek/domain/show.php" class="btn btn-block btn-secondary btn-md">Domain verileri </a>
+    <a href="/cpanelornek/domain/addsub.php" class="btn btn-block btn-secondary btn-md">SubDomain Ekle </a>
+    <hr>
+    <label for="">Email</label>
+    <a href="/cpanelornek/email/list.php" class="btn btn-block btn-secondary btn-md">Email Hesaplarını Listele</a>
+    <a href="/cpanelornek/email/add.php" class="btn btn-block btn-secondary btn-md">Email hesabı ekle</a>
+    <a href="/cpanelornek/email/delete.php" class="btn btn-block btn-secondary btn-md">Email hesabı sil</a>
+    <hr>
+    <label for="">Veritabanı</label>
+    <a href="/cpanelornek/database/list.php" class="btn btn-block btn-secondary btn-md">List Databases</a>
+    <a href="/cpanelornek/database/add.php" class="btn btn-block btn-secondary btn-md">Create Database</a>
+    <a href="/cpanelornek/database/delete.php" class="btn btn-block btn-secondary btn-md">Delete Database</a>
+{% endblock %}
